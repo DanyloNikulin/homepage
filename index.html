@@ -1,56 +1,108 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="https://binary-studio-academy.github.io/stage-2/assets/stylesheets/base.css">
-    <title>Résumé</title>
-  </head>
-  <body>
-    <main>
-      <article>
-        <div class="page" style="border-color: midnightblue;">
-          <div class="stackable grid">
-            <div class="row">
-              <div class="three wide center aligned column">
-                <!-- Avatar -->
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://binary-studio-academy.github.io/stage-2/assets/stylesheets/base.css">
+  <title>Résumé</title>
+</head>
+
+<body>
+  <main>
+    <article>
+      <div class="page" style="border-color: midnightblue;">
+        <div class="stackable grid">
+          <div class="row">
+            <div class="three wide center aligned column">
+              <div class="avatar-wrapper">
+                <object class="avatar" data="./assets/images/avatar.jpg" role="img"
+                  aria-label="My profile picture"></object>
               </div>
-              <div class="thirteen wide column">
-                <div class="stackable grid">
-                  <div class="sixteen wide column">
-                    <!-- Name, job, contacts -->
-                  </div>
-                  <div class="sixteen wide mobile only column">
-                    <div class="divider"></div>
-                  </div>
-                  <div class="sixteen wide column">
-                    <!-- Intro -->
-                  </div>
+            </div>
+            <div class="thirteen wide column">
+              <div class="stackable grid">
+                <div class="sixteen wide column">
+                  <h1 class="name">John Christopher «Johnny» Depp II</h1>
+                  <div class="job">professional actor/housemaid</div>
+                  <ul class="contacts">
+                    <li>
+                      <a href="https://www.fb.com/volodyakushnir" rel="author" class="facebook">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <path
+                            d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z" />
+                        </svg>
+                        <span>JohnnyDepp</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/johnnydepp" target="_blank" rel="author">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <path
+                            d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                        </svg>
+                        <span>johnnydepp</span>
+                    </li>
+                    <li>
+                      <a href="https://www.tiktok.com/@johnnydepp.official?lang=en&is_copy_url=1&is_from_webapp=v1"
+                        target="_blank" rel="author">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          aria-hidden="true" focusable="false" width="1em" height="1em"
+                          style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                          preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                          <path
+                            d="M12.525.02c1.31-.02 2.61-.01 3.91-.02c.08 1.53.63 3.09 1.75 4.17c1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97c-.57-.26-1.1-.59-1.62-.93c-.01 2.92.01 5.84-.02 8.75c-.08 1.4-.54 2.79-1.35 3.94c-1.31 1.92-3.58 3.17-5.91 3.21c-1.43.08-2.86-.31-4.08-1.03c-2.02-1.19-3.44-3.37-3.65-5.71c-.02-.5-.03-1-.01-1.49c.18-1.9 1.12-3.72 2.58-4.96c1.66-1.44 3.98-2.13 6.15-1.72c.02 1.48-.04 2.96-.04 4.44c-.99-.32-2.15-.23-3.02.37c-.63.41-1.11 1.04-1.36 1.75c-.21.51-.15 1.07-.14 1.61c.24 1.64 1.82 3.02 3.5 2.87c1.12-.01 2.19-.66 2.77-1.61c.19-.33.4-.67.41-1.06c.1-1.79.06-3.57.07-5.36c.01-4.03-.01-8.05.02-12.07z" />
+                        </svg>
+                        <span>johnnydepp.official</span>
+                    </li>
+                    <li>
+                      <a href="mailto:John.Depp@me.com" rel="author" class="mail">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path
+                            d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                          </path>
+                        </svg>
+                        <span>John.Depp@me.com</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sixteen wide mobile only column">
+                  <div class="divider"></div>
+                </div>
+                <div class="sixteen wide column">
+                  <h2>Résumé</h2>
+                  <p>If there’s any message to my work, it is ultimately that it’s OK to be different, that it’s good to
+                    be different, that we should question ourselves before we pass judgement on someone who looks
+                    different, behaves different, talks different, is a different color.
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="sixteen wide column">
-                <div class="fat divider"></div>
-              </div>
+          </div>
+          <div class="row">
+            <div class="sixteen wide column">
+              <div class="fat divider"></div>
             </div>
-            <div class="row">
-              <div class="ten wide column">
-                <!-- Experience -->
-              </div>
-              <div class="six wide column">
-                <!-- Languages -->
-                <!-- Skills -->
-                <!-- Character -->
-                <!-- Likes -->
-                <!-- Dislikes -->
-                <!-- Wants -->
-                <!-- Education -->
-                <!-- Articles -->
-              </div>
+          </div>
+          <div class="row">
+            <div class="ten wide column">
+              <!-- Experience -->
+            </div>
+            <div class="six wide column">
+              <!-- Languages -->
+              <!-- Skills -->
+              <!-- Character -->
+              <!-- Likes -->
+              <!-- Dislikes -->
+              <!-- Wants -->
+              <!-- Education -->
+              <!-- Articles -->
             </div>
           </div>
         </div>
-      </article>
-    </main>
-  </body>
+      </div>
+    </article>
+  </main>
+</body>
+
 </html>
