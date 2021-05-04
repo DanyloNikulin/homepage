@@ -4,4 +4,18 @@
 .contacts li a.ticktok:hover {
     color: orange;
 }
-  
+button{
+    font-weight: bold;
+    background:transparent;
+    border:none;
+    text-transform: uppercase;
+}
+ul.timeline{
+ display: none;
+}
+p.tags.small{
+    display: none;
+}
+p.tags.small.bulleted{
+    display: none;
+}
